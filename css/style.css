@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+
+/* PALETA DE MÄS CLARO A MÄS OSCURO
+rgb(246, 241, 233) blanco
+rgb(255, 217, 61) amarillo
+rgb(255, 132, 0) naranja
+rgb(79, 32, 13) marrón
+*/
+
+/*********************** reset ***********************/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(246, 241, 233);
+  color: rgb(79, 32, 13);
+  font-family: "Oswald", sans-serif;
+  min-height: 100vh;
+  font-size: 1.6rem !important;
+  line-height: 1 !important;
+  display: grid;
+  grid-template:
+    "header" min-content
+    "main" auto
+    "footer" min-content /
+    1fr;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*********************** header ***********************/
+
+.header {
+  background-color: rgb(79, 32, 13, 0.9);
+  position: sticky;
+  top: 0;
+  left: 0;
+  grid-area: header;
+  z-index: 1;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.navbar-brand-img {
+  max-width: 7rem;
+  display: inline-block;
+  background-color: rgb(246, 241, 233);
+  border: solid 2px rgb(255, 217, 61);
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.navbar-brand-name {
+  display: inline-flex;
+  background-color: rgb(246, 241, 233);
+  color: rgb(79, 32, 13);
+  font-size: x-large;
+  font-weight: bold;
+  border: solid 2px rgb(255, 217, 61);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.nav-item {
+  border: solid 2px rgb(255, 217, 61);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.nav-item:hover {
+  background-color: rgb(255, 132, 0, 0.2);
+  transition: 0.5s;
+}
+
+.nav-link,
+.nav-link:hover {
+  color: rgb(255, 217, 61);
+  font-size: large;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  gap: 10px;
+  --bs-nav-link-hover-color: rgb(255, 217, 61);
+}
+
+.navbar-nav .nav-link.active {
+  color: rgb(255, 132, 0);
+}
+
+.navbar-toggler {
+  border: 1px solid rgb(246, 241, 233, 0.75);
+  padding: 15px;
+}
+
+.navbar-toggler:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 241, 233, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*** offcanvas ***/
+
+.offcanvas {
+  background-color: rgb(79, 32, 13, 0.9);
+}
+
+.offcanvas-title {
+  color: rgb(246, 241, 233);
+  font-size: larger;
+  font-weight: bold;
+}
+
+.btn-close {
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgba%28246, 241, 233, 0.75%29'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
+
+/*********************** main ***********************/
+
+.main {
+  grid-area: main;
+}
+
+.parallax-img {
+  background-image: url("../images/header-img.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 25rem;
+  position: relative;
+}
+
+.parallax-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-title h1 {
+  color: rgb(255, 132, 0);
+  font-size: xx-large;
+  font-weight: bold;
+  background-color: rgb(79, 32, 13, 0.5);
+  border: solid 2px rgb(79, 32, 13, 0.5);
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+/*********************** footer ***********************/
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(79, 32, 13, 0.9);
+  color: rgb(246, 241, 233);
+}
+
+.footer hr {
+  margin: 0px 80px;
+  padding: 5px 0;
+  border-width: 2px;
+}
+
+/***** footer 1 *****/
+
+.footer-1 {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-1-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-1 p {
+  margin: 0;
+}
+
+.footer-1 img {
+  width: 50px;
+}
+
+/***** footer 2 *****/
+
+.footer-2 {
+  padding: 10px;
+}
+
+.nav__footer_list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav__footer__list__link {
+  color: rgb(246, 241, 233);
+  text-decoration: none;
+  font-size: large;
+  font-weight: bold;
+}
+
+.nav__footer__list__link:hover {
+  color: rgb(255, 132, 0);
+  transition: 0.5s;
+}
