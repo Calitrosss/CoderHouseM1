@@ -50,6 +50,10 @@ img {
   z-index: 1;
 }
 
+.container {
+  max-width: 1024px;
+}
+
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -165,6 +169,21 @@ img {
   padding: 10px 20px;
 }
 
+.card-title {
+  font-size: 2rem;
+  color: rgb(79, 32, 13);
+}
+
+.card-text {
+  color: rgb(79, 32, 13);
+}
+
+.card .row div img,
+.card .row div iframe {
+  max-width: 95%;
+  max-height: 95%;
+}
+
 /*********************** footer ***********************/
 
 .footer {
@@ -208,6 +227,10 @@ img {
   padding: 10px;
 }
 
+.nav__footer {
+  max-width: 100%;
+}
+
 .nav__footer_list {
   list-style: none;
   display: flex;
@@ -225,4 +248,37 @@ img {
 .nav__footer__list__link:hover {
   color: rgb(255, 132, 0);
   transition: 0.5s;
+}
+
+/*********************** media queries ***********************/
+
+@media (max-width: 768px) {
+  .footer-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav__footer_list {
+    flex-wrap: wrap;
+  }
+
+  .card-title {
+    text-align: center;
+  }
+
+  .card-text {
+    text-align: justify !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand-name {
+    display: none;
+  }
+
+  .footer-1 {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
