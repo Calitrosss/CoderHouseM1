@@ -212,8 +212,14 @@ img {
   text-align: center;
 }
 
-.card-img-top-test {
-  height: 400px;
+.btn-primary {
+  background-color: rgb(79, 32, 13);
+  border: 0;
+}
+
+.btn-primary:hover {
+  background-color: rgb(79, 32, 13);
+  color: rgb(255, 132, 0);
 }
 
 /*********************** footer ***********************/
