@@ -212,10 +212,6 @@ img {
   text-align: center;
 }
 
-.card-img-top-test {
-  height: 400px;
-}
-
 /*********************** footer ***********************/
 
 .footer {
