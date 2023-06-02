@@ -175,7 +175,7 @@ img {
 .card .row div img,
 .card .row div iframe {
   max-width: 95%;
-  max-height: 95%;
+  max-height: 480px;
 }
 
 .text-justify {
@@ -184,11 +184,6 @@ img {
 
 .text-color {
   color: rgb(79, 32, 13) !important;
-}
-
-.img-max-size {
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .card-transition {
@@ -225,8 +220,12 @@ img {
 
 /***** formulario *****/
 
-.form {
-  max-width: 480px;
+.legend {
+  background-color: rgb(79, 32, 13, 0.9);
+  color: rgb(246, 241, 233);
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .textarea {
@@ -299,13 +298,6 @@ img {
 }
 
 /*********************** media queries ***********************/
-
-@media (max-width: 992px) {
-  .img-max-size {
-    max-width: 100%;
-    max-height: 480px;
-  }
-}
 
 @media (max-width: 768px) {
   .footer-2 {
