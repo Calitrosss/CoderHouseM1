@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Panadería Artesanal | Online | Delivery</title>
+    <title>Panadería Artesanal | Contacto</title>
   </head>
   <body class="body-layout">
     <header class="header">
@@ -72,59 +72,75 @@
       </nav>
     </header>
 
-    <main class="container-fluid">
-      <section class="parallax-img parallax-title">
-        <h1>CONTACTO</h1>
+    <main class="main container-fluid">
+      <section class="blank-section">
+        <h1>¿QUIERES COMUNICARTE CON NOSOTROS?</h1>
       </section>
 
-      <section class="container">
-        <form>
-          <fieldset>
+      <section class="container my-5">
+        <form class="row justify-content-center">
+          <fieldset class="col-sm-8 col-md-6">
             <legend>Formulario de contacto</legend>
-            <div>
-              <label for="nombre">Nombre: </label>
-              <input type="tex" name="nombre" placeholder="Ingresa tu nombre" />
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                type="tex"
+                name="nombre"
+                placeholder="Ingresa tu nombre"
+              />
+              <label for="nombre">Nombre</label>
             </div>
-            <div>
-              <label for="apellido">Apellido: </label>
-              <input type="tex" name="apellido" placeholder="Ingresa tu apellido" />
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                type="tex"
+                name="apellido"
+                placeholder="Ingresa tu apellido"
+              />
+              <label for="apellido">Apellido</label>
             </div>
-            <div>
-              <label for="edad">Edad: </label>
-              <input type="number" name="edad" placeholder="Ingresa tu edad" />
+            <div class="form-floating mb-3">
+              <input class="form-control" type="number" name="edad" placeholder="Ingresa tu edad" />
+              <label for="edad">Edad</label>
             </div>
-            <div>
-              <label for="email">Email: </label>
-              <input type="email" name="email" placeholder="Ingresa tu email" />
+            <div class="form-floating mb-3">
+              <input
+                class="form-control"
+                type="email"
+                name="email"
+                placeholder="Ingresa tu email"
+              />
+              <label for="email">Email</label>
             </div>
-            <div>
-              <label for="mensaje">Mensaje: </label>
+            <div class="form-floating mb-3">
               <textarea
+                class="form-control textarea"
                 name="mensaje"
-                id=""
-                cols="30"
-                rows="10"
                 placeholder="Deje su mensaje"
               ></textarea>
+              <label for="mensaje">Mensaje</label>
             </div>
-            <div>
-              <input type="submit" value="Enviar" />
-              <button type="reset">Limpiar</button>
+            <div class="d-flex justify-content-center gap-3">
+              <input type="submit" value="Enviar" class="btn btn-primary" />
+              <button type="reset" class="btn btn-primary">Limpiar</button>
             </div>
           </fieldset>
         </form>
       </section>
 
-      <section class="container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d190029.11653387547!2d12.370848142092846!3d41.90995278422306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scl!4v1682471101043!5m2!1sen!2scl"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+      <section class="container my-5">
+        <div class="row justify-content-center">
+          <iframe
+            class="col-sm-8 col-md-6"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d190029.11653387547!2d12.370848142092846!3d41.90995278422306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2scl!4v1682471101043!5m2!1sen!2scl"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
 
-      <section class="parallax-img"></section>
+      <section class="blank-section"></section>
     </main>
 
     <footer class="footer container-fluid">
