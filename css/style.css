@@ -74,14 +74,14 @@ img {
   padding: 10px 20px;
 }
 
-.nav-link {
+.navbar-expand-lg .navbar-nav .nav-link {
   color: rgb(255, 217, 61);
   font-size: large;
   font-weight: bold;
   border: solid 2px rgb(255, 217, 61);
   border-radius: 10px;
   display: block;
-  padding: 13px 23px !important;
+  padding: 13px 23px;
 }
 
 .nav-link:hover {
@@ -185,14 +185,6 @@ img {
   max-height: 480px;
 }
 
-.text-justify {
-  text-align: justify !important;
-}
-
-.text-color {
-  color: rgb(79, 32, 13) !important;
-}
-
 .card-transition {
   transition: all ease-in-out 0.2s;
 }
@@ -240,8 +232,8 @@ img {
   line-height: inherit;
 }
 
-.textarea {
-  height: 150px !important;
+.form-floating > .form-control.textarea {
+  height: 150px;
 }
 
 .form-floating > .form-control:focus ~ label {
