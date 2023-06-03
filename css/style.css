@@ -282,6 +282,11 @@ img {
   border-width: 2px;
 }
 
+.footer-mailto {
+  color: rgb(246, 241, 233);
+  text-decoration: none;
+}
+
 /***** footer 1 *****/
 
 .footer-1 {
