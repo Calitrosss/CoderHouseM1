@@ -156,7 +156,7 @@ img {
   text-align: center;
 }
 
-/*********************** main ***********************/
+/*********************** cards ***********************/
 .card-title {
   color: rgb(79, 32, 13);
 }
@@ -188,7 +188,7 @@ img {
   gap: 20px;
 }
 
-/*********************** main ***********************/
+/*********************** buttons ***********************/
 .btn-primary {
   background-color: rgb(79, 32, 13);
   border: 0;
@@ -323,7 +323,7 @@ img {
 
 /*********************** media queries ***********************/
 @media (max-width: 768px) {
-  /***** footer *****/
+  /***** footer 2 *****/
   .footer-2 {
     display: flex;
     flex-wrap: wrap;
@@ -342,7 +342,7 @@ img {
   .navbar-brand-name {
     display: none;
   }
-  /***** footer *****/
+  /***** footer 1 *****/
   .footer-1 {
     flex-direction: column;
     gap: 10px;
