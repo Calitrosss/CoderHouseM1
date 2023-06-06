@@ -1,0 +1,28 @@
+// fuente
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+$font: "Oswald", sans-serif;
+
+// PALETA DE MÄS CLARO A MÄS OSCURO
+// rgb(246, 241, 233) blanco
+// rgb(255, 217, 61) amarillo
+// rgb(255, 132, 0) naranja
+// rgb(79, 32, 13) marrón
+
+// blanco
+$blanco: rgb(246, 241, 233);
+$blanco-75: rgb(246, 241, 233, 0.75);
+$blanco-70: rgb(246, 241, 233, 0.7);
+
+// amarillo
+$amarillo: rgb(255, 217, 61);
+
+//naranja
+$naranja: rgb(255, 132, 0);
+$naranja-20: rgb(255, 132, 0, 0.2);
+
+//marron
+$marron: rgb(79, 32, 13);
+$marron-90: rgb(79, 32, 13, 0.9);
+$marron-70: rgb(79, 32, 13, 0.7);
+$marron-65: rgb(79, 32, 13, 0.65);
+$marron-50: rgb(79, 32, 13, 0.5);

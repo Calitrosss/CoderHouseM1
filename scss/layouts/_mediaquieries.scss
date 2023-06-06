@@ -1,0 +1,32 @@
+/*********************** media queries ***********************/
+
+@media (max-width: 768px) {
+  /***** footer *****/
+  .footer-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav__footer_list {
+    flex-wrap: wrap;
+  }
+
+  /***** cards *****/
+  .card-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /***** header *****/
+  .navbar-brand-name {
+    display: none;
+  }
+
+  /***** footer *****/
+  .footer-1 {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

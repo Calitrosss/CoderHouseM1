@@ -15,10 +15,6 @@ rgb(79, 32, 13) marrón
   padding: 0;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   background-color: rgb(246, 241, 233);
   color: rgb(79, 32, 13);
@@ -35,7 +31,6 @@ img {
   min-height: 100dvh;
   display: grid;
   grid-template-rows: max-content 1fr max-content;
-  font-size: 1.6rem !important;
   line-height: 1 !important;
 }
 
@@ -46,7 +41,7 @@ img {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 .container {
@@ -56,16 +51,16 @@ img {
 .navbar-brand {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
+  margin-left: 5px;
 }
 
 .navbar-brand-img {
-  max-width: 7rem;
+  max-width: 70px;
   display: inline-block;
   background-color: rgb(246, 241, 233);
   border: solid 2px rgb(255, 217, 61);
   border-radius: 10px;
-  margin-right: 1rem;
+  margin-right: 10px;
 }
 
 .navbar-brand-name {
@@ -79,22 +74,18 @@ img {
   padding: 10px 20px;
 }
 
-.nav-item {
-  border: solid 2px rgb(255, 217, 61);
-  border-radius: 10px;
-  padding: 10px 20px;
-}
-
-.nav-item:hover {
-  background-color: rgb(255, 132, 0, 0.2);
-  transition: 0.5s;
-}
-
-.nav-link,
-.nav-link:hover {
+.navbar-expand-lg .navbar-nav .nav-link {
   color: rgb(255, 217, 61);
   font-size: large;
   font-weight: bold;
+  border: solid 2px rgb(255, 217, 61);
+  border-radius: 10px;
+  display: block;
+  padding: 13px 23px;
+}
+
+.nav-link:hover {
+  background-color: rgb(255, 132, 0, 0.2);
 }
 
 .navbar-nav {
@@ -117,6 +108,8 @@ img {
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28246, 241, 233, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 18.75px;
+  height: 18.75px;
 }
 
 /*** offcanvas ***/
@@ -127,7 +120,7 @@ img {
 
 .offcanvas-title {
   color: rgb(246, 241, 233);
-  font-size: larger;
+  font-size: x-large;
   font-weight: bold;
 }
 
@@ -137,60 +130,59 @@ img {
 
 /*********************** main ***********************/
 
-.parallax-img {
+.main {
   background-image: url("../images/header-img.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 25rem;
   position: relative;
 }
 
-.parallax-title {
+.main::before {
+  content: "";
+  background: rgb(0 0 0 / 70%);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+.blank-section {
+  width: 100%;
+  height: 150px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.parallax-title h1 {
+.blank-section h1 {
   color: rgb(255, 132, 0);
-  font-size: xx-large;
   font-weight: bold;
   background-color: rgb(79, 32, 13, 0.5);
   border: solid 2px rgb(79, 32, 13, 0.5);
   border-radius: 5px;
   padding: 10px 20px;
+  text-align: center;
 }
 
 .card-title {
-  font-size: 2rem;
   color: rgb(79, 32, 13);
 }
 
 .card-text {
   color: rgb(79, 32, 13);
-  text-align: justify !important;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .card .row div img,
 .card .row div iframe {
   max-width: 95%;
-  max-height: 95%;
-}
-
-.text-justify {
-  text-align: justify !important;
-}
-
-.text-color {
-  color: rgb(79, 32, 13) !important;
-}
-
-.img-max-size {
-  max-width: 100%;
-  max-height: 100%;
+  max-height: 480px;
 }
 
 .card-transition {
@@ -208,8 +200,68 @@ img {
 }
 
 .section-title {
-  padding: 1.5rem;
+  padding: 15px;
   text-align: center;
+  background-color: rgb(246, 241, 233);
+  color: rgb(79, 32, 13);
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.btn-primary {
+  background-color: rgb(79, 32, 13);
+  border: 0;
+}
+
+.btn-primary:hover {
+  background-color: rgb(79, 32, 13);
+  color: rgb(255, 132, 0);
+}
+
+/***** formulario *****/
+
+.legend {
+  background-color: rgb(79, 32, 13, 0.9);
+  color: rgb(246, 241, 233);
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
+}
+
+.form-floating > .form-control.textarea {
+  height: 150px;
+  max-width: 100%;
+}
+
+.form-floating > .form-control:focus ~ label {
+  color: rgb(79, 32, 13, 0.65);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  gap: 10px;
+  max-width: 1024px;
+}
+
+.iframe-contact {
+  height: 200px;
+  max-width: 100%;
+}
+
+.btn-limpiar {
+  background-color: rgb(246, 241, 233, 0.7);
+  color: rgb(79, 32, 13, 0.7);
+  transition: all ease-in-out 0.2s;
+}
+
+.btn-limpiar:hover {
+  background-color: rgb(246, 241, 233);
+  color: rgb(79, 32, 13);
 }
 
 /*********************** footer ***********************/
@@ -223,6 +275,11 @@ img {
   margin: 0px 80px;
   padding: 5px 0;
   border-width: 2px;
+}
+
+.footer-mailto {
+  color: rgb(246, 241, 233);
+  text-decoration: none;
 }
 
 /***** footer 1 *****/
@@ -279,13 +336,6 @@ img {
 
 /*********************** media queries ***********************/
 
-@media (max-width: 992px) {
-  .img-max-size {
-    max-width: 100%;
-    max-height: 480px;
-  }
-}
-
 @media (max-width: 768px) {
   .footer-2 {
     display: flex;
@@ -309,6 +359,6 @@ img {
 
   .footer-1 {
     flex-direction: column;
-    gap: 1rem;
+    gap: 10px;
   }
 }

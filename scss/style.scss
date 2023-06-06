@@ -1,0 +1,16 @@
+//import base
+@import "./base/vars";
+@import "./base/utilities";
+@import "./base/reset";
+
+//import components
+@import "./components/header";
+@import "./components/main";
+@import "./components/cards";
+@import "./components/buttons";
+@import "./components/footer";
+
+//import layout
+@import "./layouts/productos";
+@import "./layouts/contacto";
+@import "./layouts/mediaquieries";

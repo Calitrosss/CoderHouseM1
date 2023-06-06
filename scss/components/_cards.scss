@@ -1,0 +1,32 @@
+/*********************** main ***********************/
+
+.card-title {
+  color: $marron;
+}
+
+.card-text {
+  color: $marron;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.card .row div img,
+.card .row div iframe {
+  max-width: 95%;
+  max-height: 480px;
+}
+
+.card-transition {
+  transition: all ease-in-out 0.2s;
+}
+
+.card-transition:hover {
+  transform: scale(1.05);
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  gap: 20px;
+}

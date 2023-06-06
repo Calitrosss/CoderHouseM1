@@ -1,0 +1,45 @@
+/*********************** contacto ***********************/
+
+.legend {
+  background-color: $marron-90;
+  color: $blanco;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
+}
+
+.form-floating > .form-control.textarea {
+  height: 150px;
+  max-width: 100%;
+}
+
+.form-floating > .form-control:focus ~ label {
+  color: $marron-65;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  gap: 10px;
+  max-width: 1024px;
+}
+
+.iframe-contact {
+  height: 200px;
+  max-width: 100%;
+}
+
+.btn-limpiar {
+  background-color: $blanco-70;
+  color: $marron-70;
+  transition: all ease-in-out 0.2s;
+}
+
+.btn-limpiar:hover {
+  background-color: $blanco;
+  color: $marron;
+}

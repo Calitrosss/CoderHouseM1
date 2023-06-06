@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
-
-/* PALETA DE MÄS CLARO A MÄS OSCURO
-rgb(246, 241, 233) blanco
-rgb(255, 217, 61) amarillo
-rgb(255, 132, 0) naranja
-rgb(79, 32, 13) marrón
-*/
-
 /*********************** reset ***********************/
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,9 +26,8 @@ img {
 }
 
 /*********************** header ***********************/
-
 .header {
-  background-color: rgb(79, 32, 13, 0.9);
+  background-color: rgba(79, 32, 13, 0.9);
   position: sticky;
   top: 0;
   left: 0;
@@ -85,12 +75,12 @@ img {
 }
 
 .nav-link:hover {
-  background-color: rgb(255, 132, 0, 0.2);
+  background-color: rgba(255, 132, 0, 0.2);
 }
 
 .navbar-nav {
   gap: 10px;
-  --bs-nav-link-hover-color: rgb(255, 217, 61);
+  --bs-nav-link-hover-color: $amarillo;
 }
 
 .navbar-nav .nav-link.active {
@@ -98,7 +88,7 @@ img {
 }
 
 .navbar-toggler {
-  border: 1px solid rgb(246, 241, 233, 0.75);
+  border: 1px solid rgba(246, 241, 233, 0.75);
   padding: 15px;
 }
 
@@ -113,9 +103,8 @@ img {
 }
 
 /*** offcanvas ***/
-
 .offcanvas {
-  background-color: rgb(79, 32, 13, 0.9);
+  background-color: rgba(79, 32, 13, 0.9);
 }
 
 .offcanvas-title {
@@ -129,7 +118,6 @@ img {
 }
 
 /*********************** main ***********************/
-
 .main {
   background-image: url("../images/header-img.png");
   background-attachment: fixed;
@@ -141,7 +129,7 @@ img {
 
 .main::before {
   content: "";
-  background: rgb(0 0 0 / 70%);
+  background: rgba(0, 0, 0, 0.7);
   top: 0;
   right: 0;
   left: 0;
@@ -161,13 +149,14 @@ img {
 .blank-section h1 {
   color: rgb(255, 132, 0);
   font-weight: bold;
-  background-color: rgb(79, 32, 13, 0.5);
-  border: solid 2px rgb(79, 32, 13, 0.5);
+  background-color: rgba(79, 32, 13, 0.5);
+  border: solid 2px rgba(79, 32, 13, 0.5);
   border-radius: 5px;
   padding: 10px 20px;
   text-align: center;
 }
 
+/*********************** main ***********************/
 .card-title {
   color: rgb(79, 32, 13);
 }
@@ -199,15 +188,7 @@ img {
   gap: 20px;
 }
 
-.section-title {
-  padding: 15px;
-  text-align: center;
-  background-color: rgb(246, 241, 233);
-  color: rgb(79, 32, 13);
-  border-radius: 15px;
-  z-index: 1;
-}
-
+/*********************** main ***********************/
 .btn-primary {
   background-color: rgb(79, 32, 13);
   border: 0;
@@ -218,56 +199,9 @@ img {
   color: rgb(255, 132, 0);
 }
 
-/***** formulario *****/
-
-.legend {
-  background-color: rgb(79, 32, 13, 0.9);
-  color: rgb(246, 241, 233);
-  text-align: center;
-  border-radius: 5px;
-  padding: 10px;
-  max-width: 100%;
-  margin-bottom: 0.5rem;
-  font-size: calc(1.275rem + 0.3vw);
-  line-height: inherit;
-}
-
-.form-floating > .form-control.textarea {
-  height: 150px;
-  max-width: 100%;
-}
-
-.form-floating > .form-control:focus ~ label {
-  color: rgb(79, 32, 13, 0.65);
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
-  gap: 10px;
-  max-width: 1024px;
-}
-
-.iframe-contact {
-  height: 200px;
-  max-width: 100%;
-}
-
-.btn-limpiar {
-  background-color: rgb(246, 241, 233, 0.7);
-  color: rgb(79, 32, 13, 0.7);
-  transition: all ease-in-out 0.2s;
-}
-
-.btn-limpiar:hover {
-  background-color: rgb(246, 241, 233);
-  color: rgb(79, 32, 13);
-}
-
 /*********************** footer ***********************/
-
 .footer {
-  background-color: rgb(79, 32, 13, 0.9);
+  background-color: rgba(79, 32, 13, 0.9);
   color: rgb(246, 241, 233);
 }
 
@@ -283,7 +217,6 @@ img {
 }
 
 /***** footer 1 *****/
-
 .footer-1 {
   display: flex;
   padding: 10px 0;
@@ -306,7 +239,6 @@ img {
 }
 
 /***** footer 2 *****/
-
 .footer-2 {
   padding: 10px;
 }
@@ -334,31 +266,87 @@ img {
   transition: 0.5s;
 }
 
-/*********************** media queries ***********************/
+/*********************** productos ***********************/
+.section-title {
+  padding: 15px;
+  text-align: center;
+  background-color: rgb(246, 241, 233);
+  color: rgb(79, 32, 13);
+  border-radius: 15px;
+  z-index: 1;
+}
 
+/*********************** contacto ***********************/
+.legend {
+  background-color: rgba(79, 32, 13, 0.9);
+  color: rgb(246, 241, 233);
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
+}
+
+.form-floating > .form-control.textarea {
+  height: 150px;
+  max-width: 100%;
+}
+
+.form-floating > .form-control:focus ~ label {
+  color: rgba(79, 32, 13, 0.65);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  gap: 10px;
+  max-width: 1024px;
+}
+
+.iframe-contact {
+  height: 200px;
+  max-width: 100%;
+}
+
+.btn-limpiar {
+  background-color: rgba(246, 241, 233, 0.7);
+  color: rgba(79, 32, 13, 0.7);
+  transition: all ease-in-out 0.2s;
+}
+
+.btn-limpiar:hover {
+  background-color: rgb(246, 241, 233);
+  color: rgb(79, 32, 13);
+}
+
+/*********************** media queries ***********************/
 @media (max-width: 768px) {
+  /***** footer *****/
   .footer-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-
   .nav__footer_list {
     flex-wrap: wrap;
   }
-
+  /***** cards *****/
   .card-title {
     text-align: center;
   }
 }
-
 @media (max-width: 480px) {
+  /***** header *****/
   .navbar-brand-name {
     display: none;
   }
-
+  /***** footer *****/
   .footer-1 {
     flex-direction: column;
     gap: 10px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
