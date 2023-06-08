@@ -1,23 +1,20 @@
 /*********************** buttons ***********************/
 
 .btn-primary {
-  background-color: $marron;
+  @include btncolor($marron, $blanco);
   border: 0;
   transition: 0.3s;
 
   &:hover {
-    background-color: $marron;
-    color: $naranja;
+    @include btncolor($marron, $naranja);
   }
 }
 
 .btn-limpiar {
-  background-color: $blanco-70;
-  color: $marron-70;
+  @include btncolor($blanco-70, $marron-70);
   transition: 0.3s;
 
   &:hover {
-    background-color: $blanco;
-    color: $marron;
+    @include btncolor($blanco, $marron);
   }
 }

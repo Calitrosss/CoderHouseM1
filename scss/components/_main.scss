@@ -27,8 +27,7 @@
     align-items: center;
 
     h1 {
-      color: $naranja;
-      font-weight: bold;
+      @include fontstyle(calc(1.375rem + 1.5vw), bold, $naranja);
       background-color: $marron-50;
       border: solid 2px $marron-50;
       border-radius: 5px;

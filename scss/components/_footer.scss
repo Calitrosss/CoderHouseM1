@@ -55,10 +55,8 @@
     }
 
     &__list__link {
-      color: $blanco;
+      @include fontstyle(large, bold, $blanco);
       text-decoration: none;
-      font-size: large;
-      font-weight: bold;
       transition: 0.3s;
 
       &:hover {

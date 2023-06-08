@@ -1,6 +1,6 @@
 /*********************** media queries ***********************/
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   /***** cards *****/
   .card-title {
     text-align: center;
@@ -18,7 +18,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   /***** header *****/
   .navbar-brand-name {
     display: none;
@@ -31,7 +31,7 @@
   }
 }
 
-@media (max-width: 375px) {
+@media only screen and (max-width: 375px) {
   /***** contacto *****/
   .contact-grid {
     display: flex;

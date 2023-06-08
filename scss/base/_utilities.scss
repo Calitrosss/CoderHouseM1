@@ -1,0 +1,10 @@
+@mixin fontstyle($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin btncolor($back-color, $color) {
+  background-color: $back-color;
+  color: $color;
+}
