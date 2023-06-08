@@ -24,3 +24,7 @@ img {
   grid-template-rows: max-content 1fr max-content;
   line-height: 1 !important;
 }
+
+.container {
+  max-width: 1024px;
+}

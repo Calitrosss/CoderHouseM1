@@ -3,9 +3,21 @@
 .btn-primary {
   background-color: $marron;
   border: 0;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $marron;
+    color: $naranja;
+  }
 }
 
-.btn-primary:hover {
-  background-color: $marron;
-  color: $naranja;
+.btn-limpiar {
+  background-color: $blanco-70;
+  color: $marron-70;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $blanco;
+    color: $marron;
+  }
 }

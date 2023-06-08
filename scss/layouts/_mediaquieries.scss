@@ -1,6 +1,11 @@
 /*********************** media queries ***********************/
 
 @media (max-width: 768px) {
+  /***** cards *****/
+  .card-title {
+    text-align: center;
+  }
+
   /***** footer 2 *****/
   .footer-2 {
     display: flex;
@@ -10,11 +15,6 @@
 
   .nav__footer_list {
     flex-wrap: wrap;
-  }
-
-  /***** cards *****/
-  .card-title {
-    text-align: center;
   }
 }
 
@@ -28,5 +28,18 @@
   .footer-1 {
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  /***** contacto *****/
+  .contact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+
+    article {
+      width: -webkit-fill-available;
+    }
   }
 }

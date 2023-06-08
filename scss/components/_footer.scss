@@ -3,67 +3,67 @@
 .footer {
   background-color: $marron-90;
   color: $blanco;
-}
 
-.footer hr {
-  margin: 0px 80px;
-  padding: 5px 0;
-  border-width: 2px;
-}
+  hr {
+    margin: 0px 80px;
+    padding: 5px 0;
+    border-width: 2px;
+  }
 
-.footer-mailto {
-  color: $blanco;
-  text-decoration: none;
-}
+  &-mailto {
+    color: $blanco;
+    text-decoration: none;
+  }
 
-/***** footer 1 *****/
+  /***** footer 1 *****/
 
-.footer-1 {
-  display: flex;
-  padding: 10px 0;
-  justify-content: space-evenly;
-  align-items: center;
-}
+  &-1 {
+    display: flex;
+    padding: 10px 0;
+    justify-content: space-evenly;
+    align-items: center;
 
-.footer-1-left {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
 
-.footer-1 p {
-  margin: 0;
-}
+    p {
+      margin: 0;
+    }
 
-.footer-1 img {
-  width: 50px;
-}
+    img {
+      width: 50px;
+    }
+  }
 
-/***** footer 2 *****/
+  /***** footer 2 *****/
 
-.footer-2 {
-  padding: 10px;
-}
+  &-2 {
+    padding: 10px;
+  }
 
-.nav__footer {
-  max-width: 100%;
-}
+  .nav__footer {
+    max-width: 100%;
 
-.nav__footer_list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
+    &_list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
 
-.nav__footer__list__link {
-  color: $blanco;
-  text-decoration: none;
-  font-size: large;
-  font-weight: bold;
-}
+    &__list__link {
+      color: $blanco;
+      text-decoration: none;
+      font-size: large;
+      font-weight: bold;
+      transition: 0.3s;
 
-.nav__footer__list__link:hover {
-  color: $naranja;
-  transition: 0.5s;
+      &:hover {
+        color: $naranja;
+      }
+    }
+  }
 }
