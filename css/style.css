@@ -165,11 +165,15 @@ img {
 }
 
 /*********************** cards ***********************/
+.card-body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
 .card-title {
   color: rgb(79, 32, 13);
 }
 .card-text {
-  font-size: 16px;
+  font-size: clamp(1rem, 0.96rem + 0.22vw, 1.13rem);
   font-weight: normal;
   color: rgb(79, 32, 13);
   text-align: justify;
@@ -266,6 +270,15 @@ img {
   max-width: 1024px;
 }
 
+.form-control {
+  font-size: clamp(1rem, 0.96rem + 0.22vw, 1.13rem);
+  font-weight: normal;
+  color: rgb(79, 32, 13);
+}
+.form-control:focus {
+  color: rgb(255, 132, 0);
+}
+
 .legend {
   font-size: calc(1.275rem + 0.3vw);
   font-weight: normal;
@@ -282,6 +295,9 @@ img {
 .form-floating > .form-control.textarea {
   height: 150px;
   max-width: 100%;
+}
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  color: rgba(79, 32, 13, 0.65);
 }
 .form-floating > .form-control:focus ~ label {
   color: rgba(79, 32, 13, 0.65);

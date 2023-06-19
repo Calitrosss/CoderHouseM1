@@ -7,6 +7,14 @@
   max-width: 1024px;
 }
 
+.form-control {
+  @include fontstyle($fontsize, normal, $marron);
+
+  &:focus {
+    color: $naranja;
+  }
+}
+
 .legend {
   @include fontstyle(calc(1.275rem + 0.3vw), normal, $blanco);
   background-color: $marron-90;
@@ -23,6 +31,10 @@
     &.textarea {
       height: 150px;
       max-width: 100%;
+    }
+
+    &:not(:placeholder-shown) ~ label {
+      color: $marron-65;
     }
 
     &:focus ~ label {

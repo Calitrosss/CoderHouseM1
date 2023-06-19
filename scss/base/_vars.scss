@@ -1,6 +1,7 @@
 // fuente
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 $font: "Oswald", sans-serif;
+$fontsize: clamp(1rem, calc(0.96rem + 0.22vw), 1.13rem);
 
 // PALETA DE MÄS CLARO A MÄS OSCURO
 // rgb(246, 241, 233) blanco

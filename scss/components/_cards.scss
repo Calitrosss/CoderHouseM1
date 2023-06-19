@@ -1,12 +1,17 @@
 /*********************** cards ***********************/
 
 .card {
+  &-body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+
   &-title {
     color: $marron;
   }
 
   &-text {
-    @include fontstyle(16px, normal, $marron);
+    @include fontstyle($fontsize, normal, $marron);
     text-align: justify;
     line-height: 1.2;
   }
